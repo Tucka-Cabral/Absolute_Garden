@@ -139,6 +139,7 @@ align-self: self-start;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    text-align: center;
     padding: 70px 120px 35px 120px;
     gap: 15px;
 }
@@ -150,6 +151,13 @@ align-self: self-start;
     border-radius: 50% 20% / 10% 40%;
 }
 
+.skills__name{
+    margin: 25px 0;
+}
+
+.skills__img{
+    margin: 25px 0;
+}
 
 /*Sessão Hobbies*/
 
@@ -161,6 +169,7 @@ align-self: self-start;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    text-align: center;
     padding: 70px 120px 35px 120px;
     gap: 15px;
 }
@@ -170,6 +179,14 @@ align-self: self-start;
     height: 174px;
     width: 176px;
     border-radius: 50% 20% / 10% 40%;
+}
+
+.hobbies__name{
+    margin: 25px 0;
+}
+
+.hobbies__img{
+    margin: 25px 0;
 }
 
 
@@ -189,35 +206,38 @@ section.academic{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-between;
     padding: 35px;
 }
 
 .academic__courses__list{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.academic__courses__item__img{
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
     background-color: #FFFFFF ;
     height: 200px;
     width: 350px;
     border-radius: 10% / 50%;
-    
+    margin: 70px 120px 35px 120px;
+    text-align: center;    
+}
+
+.academic__courses__item__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
 }
 
 .academic__courses__item__title{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-wrap: balance;
+    text-wrap:balance;
     text-align: center;
-    width: 300px;
+    height: 50px;
+    width: 350px;
+    margin: 70px 120px 15px 120px;
 }
 
 .academic__courses__item__subtitle{
@@ -232,23 +252,53 @@ section.academic{
 
 section.experience{
     font-size: 22px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .experience__section__title{
+    
     padding: 35px;
     text-align: center;
- 
 }
 
 .experiencie__box{
     display: flex;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    font-size: 18px;
-    justify-content: space-around;
+    font-size: 20px;
+    justify-content:center;
     padding: 50px;
-    gap: 60px
+    margin: 0 30px;
+}
+
+.experience__img{
+    height: 512px;
+    width: 720px;
+    text-align:start;
+}
+
+.experience__infoDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 50px;
+    gap: 50px;
+
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
 }
 
 .experience__description{
@@ -267,7 +317,7 @@ section.experience{
     border-radius: 24px;
     background: var(--cor-secundaria);
     font-size: 16px;
-    color: var(--cor-de-fundo);
+    color: var(--cor-bemvindo);
     border: 1px solid var(--cor-especial);
     height: 40px;
     padding: 8px 24px;
@@ -277,7 +327,7 @@ section.experience{
 
 .experiencia__botao--repo:hover{
     background-color: var(--cor-hover);
-    color: var(--cor-de-fundo);
+    color: var(--cor-bemvindo);
 }
 
 .experiencia__botao--demo{
@@ -288,7 +338,7 @@ section.experience{
     border-radius: 24px;
     background: var(--cor-secundaria);
     font-size: 16px;
-    color: var(--cor-de-fundo);
+    color: var(--cor-bemvindo);
     border: 1px solid var(--cor-especial);
     height: 40px;
     padding: 8px 24px;
