@@ -1,34 +1,36 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
+
 
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #FFF8E9;
-   --cor-de-link: #D46C73;
-   --cor-secundaria:  #d9c1bb;
-   --cor-um:  #FBF5F4;
-   --cor-dois: #A08B64;
-   --cor-tres: #8C6954;
-   --cor-quatro: #7e5858;
-   --cor-cinco: #FFE1D0;
+   --cor-de-link:  #be4048;
+   --cor-secundaria: #D9C1BB;  
+   --cor-bemvindo: #9b2c34;
+   --cor-especial:  #A08B64;
    --cor-hover: #b49d71;
-   --cor-texto:#AD333C;
+   --cor-texto:#000;
 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Raleway';
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+    background-color: var(--cor-de-fundo);
+    list-style-type: none;
 }
+
 ol, ul, li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: var(--cor-de-link);
@@ -40,54 +42,42 @@ a{
 section.menu{
 	display: flex;
     align-items: center;
-    white-space: nowrap;
     justify-content: space-between;
     font-size: 22px;
     padding: 50px 110px;
     top: 100px;
-    right: 20px;
-    left: 20px; 
 }
 
 header{
 	display: flex;
     align-items: center;
-    padding: 0px 20px;
-    font-size: 22px;
-    gap: 35px;
-}
-
-nav{
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 20px;
 }
 
 .menu__list{
     display: flex;
-    justify-content:space-between;
-    align-items: center;
+    align-items:center;
     gap: 35px;
-    padding: 8px 40px 8px 10px;
-    font-size: 22px;
 }
 
 /*Sessão Página Inicial*/
+
+section.inicial{
+    padding: 0px 110px 70px 110px;
+
+}
 
 .inicial__div{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    padding: 0px 110px 70px 110px;
 }
 
 .inicial__bemvindo{
     font-size: 52px;
     text-align: center;
     text-wrap: balance;
-    color: var(--cor-texto);
+    color: var(--cor-bemvindo);
 
 }
 
@@ -97,13 +87,6 @@ nav{
     width: 55%;
     gap: 50px
 
-}
-
-/*Sessão Title*/
-
-section.title{
-
-    padding: 0px 130px 0px 130px;
 }
 
 
@@ -125,6 +108,7 @@ align-self: self-start;
     text-align: justify;
     padding: 70px 120px 35px 120px;
     height: 500px;
+
 }
 
 .title__div{
@@ -142,7 +126,6 @@ align-self: self-start;
 .title__subsection{
     font-size: 20px;
     text-align: justify;
-    line-height: 1.5;
 }
 
 /*skills*/
@@ -282,10 +265,10 @@ section.experience{
     text-align: center;
     gap: 15px;
     border-radius: 24px;
-    background: var(--cor-tres);
+    background: var(--cor-secundaria);
     font-size: 16px;
     color: var(--cor-de-fundo);
-    border: 1px solid var(--cor-dois);
+    border: 1px solid var(--cor-especial);
     height: 40px;
     padding: 8px 24px;
     width: 100%;
@@ -294,7 +277,7 @@ section.experience{
 
 .experiencia__botao--repo:hover{
     background-color: var(--cor-hover);
-    color: var(--cor-quatro);
+    color: var(--cor-de-fundo);
 }
 
 .experiencia__botao--demo{
@@ -303,10 +286,10 @@ section.experience{
     text-align: center;
     gap: 15px;
     border-radius: 24px;
-    background: var(--cor-tres);
+    background: var(--cor-secundaria);
     font-size: 16px;
     color: var(--cor-de-fundo);
-    border: 1px solid var(--cor-dois);
+    border: 1px solid var(--cor-especial);
     height: 40px;
     padding: 8px 24px;
     width: 100%;
@@ -314,7 +297,7 @@ section.experience{
 
 .experiencia__botao--demo:hover{
     background-color: var(--cor-hover);
-    color: var(--cor-quatro);
+    color: var(--cor-de-fundo);
 }
 
 
@@ -331,7 +314,6 @@ section.formcontato{
 .formcontato__contacto{
     display: flex;
     flex-direction: row;
-    line-height: 1.5;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -362,10 +344,10 @@ section.formcontato{
     text-align: center;
     gap: 15px;
     border-radius: 24px;
-    background: var(--cor-tres);
+    background: var(--cor-secundaria);
     font-size: 16px;
     color: var(--cor-de-fundo);
-    border: 1px solid var(--cor-dois);
+    border: 1px solid var(--cor-especial);
     height: 40px;
     padding: 8px 24px;
     width: 20%;
@@ -374,7 +356,7 @@ section.formcontato{
 
 .formcontato__botao:hover{
     background-color: var(--cor-hover);
-    color: var(--cor-quatro);
+    color: var(--cor-de-fundo);
 }
 
 
