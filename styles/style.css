@@ -208,6 +208,7 @@ section.academic{
     flex-direction: row;
     justify-content:space-between;
     padding: 35px;
+    gap: 50px;
 }
 
 .academic__courses__list{
@@ -219,7 +220,6 @@ section.academic{
     height: 200px;
     width: 350px;
     border-radius: 10% / 50%;
-    margin: 70px 120px 35px 120px;
     text-align: center;    
 }
 
@@ -233,20 +233,18 @@ section.academic{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-wrap:balance;
+    text-wrap:wrap;
     text-align: center;
+    margin-top: 20px;
     height: 50px;
     width: 350px;
-    margin: 70px 120px 15px 120px;
 }
 
 .academic__courses__item__subtitle{
     display: flex;
     align-items: center;
     justify-content: space-around; 
-    height: 10px;
 }
-
 
 /* experiência*/
 
@@ -327,7 +325,7 @@ section.experience{
 
 .experiencia__botao--repo:hover{
     background-color: var(--cor-hover);
-    color: var(--cor-bemvindo);
+    color: var(--cor-de-fundo);
 }
 
 .experiencia__botao--demo{
@@ -368,6 +366,7 @@ section.formcontato{
     align-items: center;
     justify-content: space-around;
     font-size: 18px;
+    margin-top: 30px;
 }
 
 .formcontato__title{

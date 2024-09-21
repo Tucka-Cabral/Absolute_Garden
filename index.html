@@ -53,7 +53,7 @@
         <div class="about__container" >
             <h3 class="about__title">Sobre mim</h3>
             <div class="title__div">
-                <p class="title__subsection">Olá, meu nome é Thais Cabral! Sou uma desenvolvedora de Front End Jr. Para preparar as páginas com o que há de mais moderno, estou em constante atualização através dos cursos da Alura. Curso que vem preparando milhares de pessoas para o mercado de trabalho, com uma formação digital de qualidade. <br>Eu sou formada em administração e pós-graduada em gestão de pessoas, carreira e coaching. Atualmente trabalho como analista de dados, realizando análise e construção de indicadores. <br> Sou brasileira, divorciada, tenho 43 anos e dois filhos. <br>Atualmente moro em São Paulo, mas nasci e cresci no Rio de Janeiro e também já fiquei um tempo em Brasília, tudo isso foi pra dizer que não tenho problemas para viajar.</p>
+                <p class="title__subsection">Olá, meu nome é Thais Cabral! Sou uma desenvolvedora de Front End Jr. <br>Para preparar as páginas com o que há de mais moderno, estou em constante atualização através dos cursos da Alura. Curso que vem preparando milhares de pessoas para o mercado de trabalho, com uma formação digital de qualidade. <br>Eu sou formada em administração e pós-graduada em gestão de pessoas, carreira e coaching. Atualmente trabalho como analista de dados, realizando análise e construção de indicadores. <br> Sou brasileira, divorciada, tenho 43 anos e dois filhos. <br>Atualmente moro em São Paulo, mas nasci e cresci no Rio de Janeiro e também já fiquei um tempo em Brasília, tudo isso foi pra dizer que não tenho problemas para viajar.</p>
                 <img class="title__profile" src="assets/eu_320X276.png" alt="Minha foto">
             </div>
             <img src="assets/Assinatura.png">
@@ -208,7 +208,7 @@
         <li class="topo__menu"><a href="#menu">Topo</a></li>  
     </section>
 
-        <!-- Sessão de Contato
+        <!-- Sessão de Contato -->
         <section class="formcontato">
             <h2 class="formcontato__title">Contato</h2>
             <div id="contato" class="formcontato__contacto">
@@ -217,22 +217,22 @@
                 </div>
                 <div class="formcontato__text">
                     <h3 class="formcontato__subtext">Isto é um pouco do que faço. Quer entrar em contato comigo? <br> Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</h3>
-                    <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" minlength="3" maxlength="50" required>
+                    <form class="formcontato__form" action="send_email.php" method="POST">
+                        <input class="formcontato__input" type="text" id="nome" name="nome" placeholder="Nome" minlength="3" maxlength="50" required>
                         <span class="mensagem-erro"></span>
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email" minlength="4" required>
+                        <input class="formcontato__input" type="email" id="email" name="email" placeholder="Email" minlength="4" required>
                         <span class="mensagem-erro"></span>
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required>
+                        <input class="formcontato__input" type="text" id="assunto" name="assunto" placeholder="Assunto" required>
                         <span class="mensagem-erro"></span>
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
                         <span class="mensagem-erro"></span>
                         <button class="formcontato__botao" type="submit">Enviar mensagem</button>
-                    </form>
+                    </form>                    
                 </div>
             </div>
             
         </section>
- -->
+
         <!-- Sessão de Footer/Rodapé-->
         <section class="footer">
             
