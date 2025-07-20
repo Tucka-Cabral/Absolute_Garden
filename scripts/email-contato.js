@@ -12,15 +12,23 @@ document.getElementById("formContato").addEventListener("submit", function (e) {
     return;
   }
 
-  fetch("https://formulario-absolute-server.onrender.com", {
+  fetch("https://formulario-absolute-server.onrender.com/enviar-contato", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ nome, email, telefone, preferencia })
   })
     .then(res => {
       if (res.ok) {
-        alert("Mensagem enviada com sucesso!");
+        // Mostrar alerta bonito
+        document.getElementById("mensagemSucesso").classList.remove("d-none");
+
+        // Limpar o formulário
         document.getElementById("formContato").reset();
+
+        // Esconder mensagem após 5s (opcional)
+        setTimeout(() => {
+          document.getElementById("mensagemSucesso").classList.add("d-none");
+        }, 5000);
       } else {
         alert("Erro ao enviar. Tente novamente.");
       }
