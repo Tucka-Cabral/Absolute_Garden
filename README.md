@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://tucka-cabral.github.io/Absolute_Garden/index.html">
-    <img src="/assets/Absolute Garden.svg" alt="Logo Absolute Garden" width="250">
+    <img src="assets/AbsoluteGarden.svg" alt="Logo Absolute Garden" width="250">
   </a>
 </p>
 
