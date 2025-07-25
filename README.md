@@ -1,3 +1,10 @@
+<p align="center">
+  <a href="https://tucka-cabral.github.io/Absolute_Garden/index.html">
+    <img src="/assets/Absolute Garden.svg" alt="Logo Absolute Garden" width="250">
+  </a>
+</p>
+
+
 # 🌸 Absolute Garden — Portfólio Profissional
 
 Bem-vindo(a) ao **Absolute Garden**, meu projeto de portfólio pessoal e profissional desenvolvido com foco em **front-end** e **design centrado no usuário**.
@@ -14,7 +21,7 @@ Aqui você encontra minha trajetória, habilidades técnicas, projetos práticos
 - **Bootstrap 5**
 - **Responsividade com media queries**
 - **GitHub Pages (para deploy)**
-- **JSON dinâmico (para carregamento dos projetos)**
+- **JSON dinâmico (para carregamento dos projetos - em processo)**
 
 ---
 
@@ -49,11 +56,10 @@ Além de apresentar meus projetos e experiência profissional, busquei aplicar:
 ```
 ├── assets/              # Imagens e logos
 ├── scripts/
-│   └── script.js        # Carregamento dos projetos
+│   └── email-contato.js # Formulário de contato
 ├── styles/
 │   ├── style.css        # Estilo principal
 │   ├── ...              # CSS modularizado por seção
-├── projetos.json        # Lista dinâmica dos projetos
 ├── index.html
 └── README.md
 ```
@@ -80,7 +86,7 @@ Busco aplicar minha experiência em dados à criação de interfaces funcionais,
 
 - [LinkedIn](https://www.linkedin.com/in/thais-cabral1)
 - [GitHub](https://github.com/Tucka-Cabral)
-- Email: tucka.cabral@gmail.com
+- Email: tucka_cabral@hotmail.com
 
 ---
 
@@ -91,6 +97,7 @@ Não utilize imagens, logos ou dados sem autorização.
 
 ---
 
-## ✨ Rodapé
+## ✨ Obrigada por visitar!
 
-*"É sobre a jornada."*
+> 🌿 _"Absolute Garden é sobre florescer com simplicidade — em qualquer terreno."_
+
