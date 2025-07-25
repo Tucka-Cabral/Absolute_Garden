@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url(/styles/menu_bemvindo.css);
-@import url(/styles/sobremim.css);
-@import url(/styles/skills_formacao.css);
-@import url(/styles/portifolio.css);
-@import url(/styles/contato_footer.css);
-
+@import url("./menu_bemvindo.css");
+@import url("./sobremim.css");
+@import url("./skills_formacao.css");
+@import url("./portifolio.css");
+@import url("./contato_footer.css");
 
 :root {
     --cor-de-fundo: #FFF8E9;
@@ -25,7 +24,7 @@ html {
 body {
     list-style-type: none;
     font-family: "Montserrat", sans-serif;
-    background: url(/assets/background.svg) no-repeat center center fixed;
+    background: url("../assets/background.svg") no-repeat center center fixed;
     background-size: cover;    
 }
 
@@ -73,3 +72,4 @@ h5 {
     text-align: right;
     font-size: 18px;
 }
+
