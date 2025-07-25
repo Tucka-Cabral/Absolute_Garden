@@ -1,0 +1,85 @@
+/*skills*/
+
+section.skills {
+    background-color: var(--fundo-translucido);
+    height: auto;
+}
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+.cards__skills {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0px 50px 40px 50px;
+}
+
+.card-img-top-skills {
+    height: 50px;
+    width: 50px;
+}
+
+.card-skills {
+    text-align: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 50% 20% / 10% 40%;
+    background-color: var(--secundaria-translucida);
+}
+
+.card-text-skills {
+    font-size: 18px;
+}
+
+/* Experiência Acadêmica*/
+
+section.academic {
+    background-color: var(--secundaria-translucida);
+    height: auto;
+}
+
+.academic__title {
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.cards-academic {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0px 50px 20px 50px;
+}
+
+.card-academic {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    border-radius: 50% 20% / 10% 40%;
+    background-color: var(--cor-de-fundo);
+}
+
+.card-img-top-academic {
+    height: 100px;
+    width: 100px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.card-text-title {
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-text-subtitle {
+    font-size: 16px;
+}

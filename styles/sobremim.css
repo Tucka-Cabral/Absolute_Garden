@@ -1,0 +1,52 @@
+/*Sessão About*/
+
+section.about {
+  background-color: var(--cor-secundaria);
+  height: auto;
+}
+
+.about__title {
+  align-self: self-start;
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.title__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 0px 50px 20px 50px;
+}
+
+.title__div__paragrafos {
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.title__profile {
+  display: none;
+}
+
+.title__subsection {
+  font-size: 18px;
+  text-align: justify;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+
+/*Tablet*/
+@media (min-width: 767px) {
+
+  .title__profile {
+    display: block;
+    padding-top: 22px;
+    width: 20%;
+  }
+
+}

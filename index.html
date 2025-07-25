@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/logo_90x90.png">
+    <link rel="shortcut icon" href="assets/AbsoluteGarden.svg">
     <title>Asolute Garden</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,100 +22,140 @@
     <!-- Sessão de Header/Menu  -->
 
     <header>
-        <img src="assets/logo_animada.gif" alt="Logo Thais Cabral" id="menu">
-        <section class="menu">
-            <nav>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills e Formações</a></li>
-                    <li class="menu__list__item"><a href="#xp">Portifólio</a></li>
-                    <li class="menu__list__item"><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="navbar navbar-expand-lg" aria-label="Menu de navegação">
+            <div class="container flex-nowrap">
+                <a class="navbar-brand order-2 order-lg-1" href=index.html>
+                    <img class="logo" src="assets/AbsoluteGarden.svg" style="max-width: 100%; height: auto;"
+                        alt="Logo do Absolute Garden" id="menu">
+                </a>
+                <button class="navbar-toggler p-2 m-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Botão para menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse order-md-3 justify-content-lg-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#sobremim"> Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills"> Skills e Formações</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#xp" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Portifólio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#xp-frontend"> Front-End</a></li>
+                                <li><a class="dropdown-item" href="#xp-analise"> Análise de Dados</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand order-3" href=index.html>
+                    <img class="logogif" src="assets/logo_320x132_gif.gif" alt="Logo do Thais Cabral" id="menu"
+                        width="150x150">
+                </a>
+            </div>
+        </nav>
     </header>
 
     <!-- Página Inicial -->
     <section class="inicial">
-        <div class="inicial__div">
-            <img class="inicial__img" src="assets/backgroundinicial.svg" alt="">
-            <div class="inicial__container">
-                <h2 class="inicial__bemvindo">Seja bem-vindo ao</h2>
-                <h1 class="inicial__bemvindo"><strong> Absolute Garden</strong></h1>
-                <p class="inicial__paragrafo">Aqui você fica sabendo mais a respeito do meu trabalho e sobre como entrar
-                    em contato.</p>
-            </div>
+        <div class="inicial__container">
+            <h2 class="inicial__bemvindo">Seja bem-vindo ao</h2>
+            <h1 class="inicial__bemvindo"><strong> Absolute Garden</strong></h1>
         </div>
+        <p class="inicial__paragrafo">Aqui você fica sabendo mais a respeito do meu trabalho e sobre como entrar
+            em contato.</p>
     </section>
 
     <!-- Sessão sobre mim -->
     <section class="about" id="sobremim">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mim</h3>
-            <div class="title__div">
-                <div class="title__div__paragrafos">
-                    <p class="title__subsection">Olá, meu nome é Thais Cabral! Sou uma profissional com mais de 15 anos
-                        de experiência em grandes empresas do setor de telecomunicações, atuando com análise de dados,
-                        processos, automação e suporte à tomada de decisão. Graduada em Administração e pós-graduada em
-                        Gestão de Pessoas, Carreira e Coaching.
-                    <p class="title__subsection">Atuei por mais de uma década com dados, eficiência operacional,
-                        ferramentas como SQL, SAS, Power BI, Excel, VBA e apresentações executivas em PowerPoint. Tenho
-                        perfil analítico, comprometido e voltado para resultados.</p>
-                    <p class="title__subsection">Em 2025, iniciei uma transição de carreira para a área de
-                        Desenvolvimento Front-End, unindo minha base em dados e processos à construção de interfaces
-                        web. Estou atualmente em formação na Alura, com foco em HTML, CSS, JavaScript e React.</p>
-                    <p class="title__subsection"></p>Busco oportunidades que valorizem minha capacidade de aprendizado,
+        <h3 class="about__title">Sobre mim</h3>
+        <div class="title__div">
+            <div class="title__div__paragrafos">
+                <p class="title__subsection">Olá, meu nome é Thais Cabral! Sou uma profissional com mais de 15 anos
+                    de experiência em grandes empresas do setor de telecomunicações, atuando com análise de dados,
+                    processos, automação e suporte à tomada de decisão. Graduada em Administração e pós-graduada em
+                    Gestão de Pessoas, Carreira e Coaching.</p>
+                <p class="title__subsection">Atuei por mais de uma década com dados, eficiência operacional,
+                    ferramentas como SQL, SAS, Power BI, Excel, VBA e apresentações executivas em PowerPoint. Tenho
+                    perfil analítico, comprometido e voltado para resultados.</p>
+                <p class="title__subsection">Em 2025, iniciei uma transição de carreira para a área de
+                    Desenvolvimento Front-End, unindo minha base em dados e processos à construção de interfaces
+                    web. Estou atualmente em formação na Alura, com foco em HTML, CSS, JavaScript e React.</p>
+                <p class="title__subsection">Busco oportunidades que valorizem minha capacidade de aprendizado,
                     experiência profissional sólida e vontade genuína de contribuir com soluções simples, funcionais e
                     bem estruturadas. Tenho grande interesse em projetos remotos ou híbridos, com espaço para
                     crescimento técnico.</p>
-                </div>
-                <img class="title__profile" src="assets/eu_320X276.png" alt="Minha foto">
             </div>
+            <img class="title__profile" src="assets/eu_320X276.png" alt="Minha foto">
         </div>
         <div class="topo__menu"><a href="#menu">Topo</a></div>
     </section>
 
     <!-- Sessão de Skills/Habilidades -->
-    <section class="skills">
-        <h3 class="skills__title" id="skills">Skills</h3>
-        <div class="skills__line">
-            <div class="skills__box">
-                <img class="skills__img" src="assets/html5.svg">
-                <p class="skills__name"> Html 5</p>
+    <section class="skills" id="skills">
+        <h3 class="skills__title">Skills</h3>
+        <div class="cards__skills d-flex justify-content-lg-between">
+            <div class="card-skills align-content-center">
+                <img src="assets/html5.svg" class="card-img-top-skills my-2" alt="Logo HTML5">
+                <div class="card-body">
+                    <p class="card-text-skills">HTML 5</p>
+                </div>
             </div>
-            <div class="skills__box">
-                <img class="skills__img" src="assets/javascript.svg" alt="">
-                <p class="skills__name">Javascript</p>
+            <div class="card-skills align-content-center">
+                <img src="assets/css.svg" class="card-img-top-skills my-2" alt="Logo CSS">
+                <div class="card-body">
+                    <p class="card-text-skills">CSS</p>
+                </div>
             </div>
-            <div class="skills__box">
-                <img class="skills__img" src="assets/bootstrap_.svg" alt="">
-                <p class="skills__name">Bootstrap</p>
+            <div class="card-skills align-content-center">
+                <img src="assets/javascript.svg" class="card-img-top-skills my-2" alt="Logo JavaScript">
+                <div class="card-body">
+                    <p class="card-text-skills">JavaScript</p>
+                </div>
             </div>
-            <div class="skills__box">
-                <img class="skills__img" src="assets/css.svg" alt="">
-                <p class="skills__name">CSS</p>
+            <div class="card-skills align-content-center">
+                <img src="assets/bootstrap_.svg" class="card-img-top-skills my-2" alt="Logo Bootstrap">
+                <div class="card-body">
+                    <p class="card-text-skills">Bootstrap</p>
+                </div>
             </div>
         </div>
+        <div class="topo__menu d-lg-none"><a href="#menu">Topo</a></div>
+
     </section>
 
     <!-- Sessão de Histórico Acadêmico -->
-    <section class="academic">
-        <h3 class="academic__title" id="skills">Formação acadêmica</h3>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <img class="academic__courses__item__img" src="assets/Logo_AIEC.png">
-                <p class="academic__courses__item__title">Administração</p>
-                <p class="academic__courses__item__subtitle">2014 - AIEC</p>
+    <section class="academic" id="skills">
+        <h3 class="academic__title">Formação acadêmica</h3>
+        <div class="cards-academic d-flex justify-content-lg-between">
+            <div class="card-academic align-content-center">
+                <img src="assets/Logo_AIEC.svg" class="card-img-top-academic my-2" alt="Logo Faculdade AIEC">
+                <div class="card-body">
+                    <p class="card-text-title">Administração</p>
+                    <p class="card-text-subtitle">2014 - AIEC</p>
+                </div>
             </div>
-            <div class="academic__courses__box">
-                <img class="academic__courses__item__img" src="assets/Logo_PUC.png">
-                <p class="academic__courses__item__title">Pós-graduação Gestão de pessoas, carreira e coaching</p>
-                <p class="academic__courses__item__subtitle">2023 - PUC-RS</p>
+            <div class="card-academic align-content-center">
+                <img src="assets/Logo_PUC.svg" class="card-img-top-academic my-2" alt="Logo Faculdade PUC-RS">
+                <div class="card-body">
+                    <p class="card-text-title">Pós-graduação Gestão de pessoas, carreira e coaching</p>
+                    <p class="card-text-subtitle">2023 - PUC-RS</p>
+                </div>
             </div>
-            <div class="academic__courses__box">
-                <img class="academic__courses__item__img" src="assets/logo-alura.svg" height="50px">
-                <p class="academic__courses__item__title">Formação Front End</p>
-                <p class="academic__courses__item__subtitle">Em andamento - Alura</p>
+            <div class="card-academic align-content-center">
+                <img src="assets/Logo_Alura.svg" class="card-img-top-academic my-2" alt="Logo Curso Alura">
+                <div class="card-body">
+                    <p class="card-text-title">Formação Front End</p>
+                    <p class="card-text-subtitle">Em andamento - Alura</p>
+                </div>
             </div>
         </div>
         <div class="topo__menu"><a href="#menu">Topo</a></div>
@@ -124,6 +164,7 @@
     <!-- Sessão de Experiência Profissional/Projetos-->
     <section class="experience">
         <h3 class="experience__section__title" id="xp">Portifólio</h3>
+        <h4 class="experience-section-title-frontend" id="xp-frontend">Front-End</h4>
         <div class="cards">
             <div class="card text-center mb-3" style="width: 18rem;  height: 25rem;">
                 <img src="" class="card-img-top mt-1" alt="...">
@@ -165,15 +206,55 @@
         <div class="topo__menu"><a href="#menu">Topo</a></div>
     </section>
 
+    <!-- <section class="experience-analise">
+        <h4 class="experience-section-title-analise" id="xp-analise">Análise de dados</h4>
+        <div class="cards">
+            <div class="card text-center mb-3" style="width: 18rem;  height: 25rem;">
+                <img src="" class="card-img-top mt-1" alt="...">
+                <div class="card-body d-flex flex-column justify-content-around">
+                    <h5 class="card-titler">Portifólio de bijuterias - Criado em: Jun/25</h5>
+                    <p class="card-text">Criação minha com os conceitos aprendidos nos cursos da Alura</p>
+                    <div class="card__btn d-flex flex-row justify-content-between">
+                        <a href="https://github.com/Tucka-Cabral/AbsoluteGardenBijus" class="btn">Repositório</a>
+                        <a href="https://tucka-cabral.github.io/AbsoluteGardenBijus/" class="btn">Ver
+                            demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center mb-3" style="width: 18rem;  height: 25rem;">
+                <img src="assets/decodificador.svg" class="card-img-top mt-1" alt="...">
+                <div class="card-body d-flex flex-column justify-content-around">
+                    <h5 class="card-title">Decodificador de texto - Criado em: Mar/24</h5>
+                    <p class="card-text">Challenge Alura para exercitar o uso do HTML, CSS (com muito Flexbox) e
+                        JavaScript</p>
+                    <div class="card__btn d-flex flex-row justify-content-between">
+                        <a href="https://github.com/Tucka-Cabral/Challenge-Criptografia" class="btn">Repositório</a>
+                        <a href="https://tucka-cabral.github.io/Challenge-Criptografia/" class="btn">Ver
+                            demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center mb-3" style="width: 18rem; height: 25rem;">
+                <img src="assets/jogosecreto.svg" class="card-img-top mt-1" alt="...">
+                <div class="card-body d-flex flex-column justify-content-around">
+                    <h5 class="card-title">Jogo Secreto - Criado em: Jan/24</h5>
+                    <p class="card-text">Jogo criado com HTML, CSS e JavaScript</p>
+                    <div class="card__btn d-flex flex-row justify-content-between">
+                        <a href="https://github.com/Tucka-Cabral/jogo-numero-secreto" class="btn">Repositório</a>
+                        <a href="https://numero-secreto-iota-blond.vercel.app/" class="btn">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topo__menu"><a href="#menu">Topo</a></div>
+    </section>
+ -->
     <!-- Sessão de Contato -->
 
     <section class="contato">
         <h3 class="formcontato__title" id="contato">Contato</h3>
-        <div class="py-4 container" style="width: 40rem; height: 15rem;">
+        <div class="py-4 container" style="height: 15rem;">
             <div class="border border-2 rounded p-3 align-items-center">
-                <div id="mensagemSucesso" class="alert alert-success d-none text-center" role="alert">
-                    Mensagem enviada com sucesso! Entrarei em contato em breve. 🌸
-                </div>
                 <form id="formContato">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="floatingNome" placeholder="Nome" required>
@@ -202,13 +283,16 @@
                     <!-- Consentimento LGPD -->
                     <label>
                         <input type="checkbox" id="lgpdConsentimento">
-                        Concordo com o uso dos meus dados para contato conforme a <a
-                            href="/politica-de-privacidade.html" target="_blank">Política de Privacidade</a>.
+                        Concordo com o uso dos meus dados para contato conforme a <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#modalPrivacidade">Política de Privacidade</a>.
                     </label>
                     <div class="d-flex justify-content-center align-items-center">
                         <button type="submit" class="btn">Enviar</button>
                     </div>
                 </form>
+            </div>
+            <div id="mensagemSucesso" class="alert alert-success d-none text-center" role="alert">
+                Mensagem enviada com sucesso! Entrarei em contato em breve. 🌸
             </div>
         </div>
     </section>
@@ -227,6 +311,39 @@
             <p>...é sobre a jornada!</p>
         </div>
     </section>
+    <!-- Modal de Política de Privacidade -->
+    <div class="modal fade" id="modalPrivacidade" tabindex="-1" aria-labelledby="modalPrivacidadeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="assets/AbsoluteGarden.svg" alt="Logo Absolute Garden" height="30">
+                    <h5 class="modal-title ms-2" id="modalPrivacidadeLabel">Política de Privacidade</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+
+                    <p>Este site coleta apenas as informações fornecidas por você no formulário de contato, ou seja,
+                        nome, e-mail e
+                        telefone. Esses dados são utilizados exclusivamente para retorno de contato e não são
+                        armazenados em banco de dados ou sistemas.</p>
+                    <p>Não utilizamos cookies, nem compartilhamos dados com terceiros.</p>
+                    <p>O preenchimento do formulário implica na aceitação desta política, bem como representa seu
+                        consentimento para que possamos entrar em contato com você.</p>
+                    <p>As informações podem ser temporariamente mantidas em nossa caixa de e-mail para fins de resposta,
+                        e você pode solicitar sua exclusão a qualquer momento pelo e-mail:
+                        <strong>tucka.cabral@gmail.com</strong>.
+                    </p>
+                    <p>Esta política está em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD – Lei nº
+                            13.709/2018)</strong>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/email-contato.js"></script>
 </body>
